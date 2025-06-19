@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space.step - Rocket Engineering Excellence</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-rocket me-2"></i>
+                <span class="brand-text">space.step</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <img src="https://pixabay.com/get/gdf2a788ddba5d9480893dce464d56d23786d66d639533dd09c3713a468d57071c14636cf794a009109ebda0e610e414e_1280.jpg" alt="Rocket Launch" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="brand-highlight">space.step</span>
+                            <br>Engineering the Future
+                        </h1>
+                        <p class="hero-subtitle">
+                            Pioneering rocket engineering solutions that push the boundaries of space exploration. 
+                            From concept to launch, we deliver cutting-edge aerospace technology.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Explore Our Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Successful Launches</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Mission Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">About space.step</h2>
+                        <p class="section-subtitle">Pushing the boundaries of rocket engineering</p>
+                        <p>
+                            At space.step, we are dedicated to advancing the frontiers of space exploration through 
+                            innovative rocket engineering solutions. Our team of expert engineers and scientists work 
+                            tirelessly to develop cutting-edge propulsion systems, spacecraft designs, and launch 
+                            technologies that make space more accessible.
+                        </p>
+                        <p>
+                            With over 15 years of experience in the aerospace industry, we have successfully delivered 
+                            projects ranging from small satellite launchers to heavy-lift launch vehicles. Our commitment 
+                            to excellence and innovation has earned us recognition as a leading force in rocket engineering.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-cog"></i>
+                                <div>
+                                    <h5>Advanced Propulsion</h5>
+                                    <p>Cutting-edge rocket engine technology</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-satellite"></i>
+                                <div>
+                                    <h5>Spacecraft Design</h5>
+                                    <p>Custom spacecraft for various missions</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h5>Launch Systems</h5>
+                                    <p>Complete launch vehicle solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="https://pixabay.com/get/g8547c662b9c63720cab79c3f4cb55f6a0983a7b4307ef4c4823428e45d526ccd6813cc73e39f3c3ab5de076d8e47bea2d587f81a73bbdf4b61a0860b9d1a6d9c_1280.jpg" alt="Space Vehicle" class="img-fluid rounded">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-play-circle"></i>
+                                <p>Watch Our Story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Capabilities</h2>
+                    <p class="section-subtitle">Comprehensive rocket engineering services</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Launch Vehicle Design</h4>
+                        <p>Complete design and development of launch vehicles from small-lift to heavy-lift configurations.</p>
+                        <ul>
+                            <li>Structural analysis and optimization</li>
+                            <li>Aerodynamic design</li>
+                            <li>Systems integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Propulsion Systems</h4>
+                        <p>Advanced rocket engine development including liquid, solid, and hybrid propulsion technologies.</p>
+                        <ul>
+                            <li>Engine design and testing</li>
+                            <li>Fuel system optimization</li>
+                            <li>Performance analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <h4>Spacecraft Engineering</h4>
+                        <p>Custom spacecraft design for scientific missions, commercial applications, and deep space exploration.</p>
+                        <ul>
+                            <li>Mission planning</li>
+                            <li>Payload integration</li>
+                            <li>Life support systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Systems Integration</h4>
+                        <p>Comprehensive integration of all vehicle systems ensuring optimal performance and reliability.</p>
+                        <ul>
+                            <li>Avionics integration</li>
+                            <li>Flight control systems</li>
+                            <li>Ground support equipment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Mission Analysis</h4>
+                        <p>Detailed mission planning and trajectory analysis to ensure successful mission outcomes.</p>
+                        <ul>
+                            <li>Orbital mechanics</li>
+                            <li>Launch window analysis</li>
+                            <li>Risk assessment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Testing & Validation</h4>
+                        <p>Comprehensive testing programs to validate design performance and ensure mission success.</p>
+                        <ul>
+                            <li>Component testing</li>
+                            <li>System-level validation</li>
+                            <li>Flight qualification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Work</h2>
+                    <p class="section-subtitle">Showcasing our rocket engineering achievements</p>
+                </div>
+            </div>
+            
+            <!-- Gallery Categories -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="launches">Launches</button>
+                        <button class="filter-btn" data-filter="vehicles">Vehicles</button>
+                        <button class="filter-btn" data-filter="spacecraft">Spacecraft</button>
+                        <button class="filter-btn" data-filter="engines">Engines</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Items -->
+            <div class="row gallery-grid">
+                <!-- Rocket Launches -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="launches">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/gdf2a788ddba5d9480893dce464d56d23786d66d639533dd09c3713a468d57071c14636cf794a009109ebda0e610e414e_1280.jpg" alt="Rocket Launch" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Falcon Heavy Launch</h5>
+                                <p>Successful heavy-lift mission deployment</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="launches">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g2e56ce5fbf29553baaaf0eef86c4956eb73671efd9e5be203cef6e3633a5e7504406be5ee0cb92cd233b34dc07cdc051_1280.jpg" alt="Rocket Launch" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Atlas V Launch</h5>
+                                <p>Commercial satellite deployment</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="launches">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/ga51f34a96ccf067ade86515ed501767368b8412c74422c56c693b0b1e1c12be67527d410e7544b257a8b8522b8a23837_1280.jpg" alt="Rocket Launch" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Delta IV Heavy</h5>
+                                <p>Deep space mission launch</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Space Vehicles -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="vehicles">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/gdb008a8db3570693391d2f67fd8696ab49c6536ef53e52b637792b66cc4fbef18fcadaaa43b6376e7f82e63cb3c01f664a77e313b6b036ee91336735e0175c79_1280.jpg" alt="Space Vehicle" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Crew Dragon</h5>
+                                <p>Advanced crew transportation system</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="vehicles">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g5d1cc670a2a0d3466a4c84f5e0c99901a11ec2c1b002f27405999897c88b3cbf0ec507c81caf1d0c0a3c5001c79a3a3e_1280.jpg" alt="Space Vehicle" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Orion Spacecraft</h5>
+                                <p>Next-generation deep space vehicle</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="vehicles">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g8653962eeb052b9418ed4da644ab9fc969bd9efd5ff5220857fae77b89f3bad74d4246354ff49af4d77c94eb1a9580d76174c080744788a691f41b5cd4178f3a_1280.jpg" alt="Space Vehicle" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Starship</h5>
+                                <p>Revolutionary reusable launch system</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spacecraft in Orbit -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="spacecraft">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g9fba3e620f9a00d9023a32aaf61edace9a6ae648cf9ef9fc8c17651df361540baab412cebad0c7ddf38a2645989df521_1280.jpg" alt="Spacecraft in Orbit" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>ISS Module</h5>
+                                <p>International Space Station component</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="spacecraft">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g93da8cb040d590cfa699449dba11a422394a2109b80cda4f6bbb2c2d09ca2c3cd8a13810a83a39b68787d3597e26b2de84d09c02d061f7f4a813ff2a16eddc7a_1280.jpg" alt="Spacecraft in Orbit" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Satellite Deployment</h5>
+                                <p>Commercial satellite in Earth orbit</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rocket Engines -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="engines">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g8d02f1cbe92e40233254063f6fc5a73bb3b5b38769027e1500ee7e6824be16fe9621cd9d16433bfc7ea8244ab94e342c_1280.jpg" alt="Rocket Engine" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>RS-25 Engine</h5>
+                                <p>High-performance liquid rocket engine</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="engines">
+                    <div class="gallery-card">
+                        <img src="https://pixabay.com/get/g064abd6c3b2876f8a1b31b2c6f713c396fd6d32203381fa53d89bed234fcd9b6b6d4f8117c87c309faa32f905ded54e0_1280.jpg" alt="Rocket Engine" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5>Raptor Engine</h5>
+                                <p>Advanced methane-fueled engine</p>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to launch your next project?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="company">Company</label>
+                                        <input type="text" class="form-control" id="company">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="project">Project Type</label>
+                                        <select class="form-control" id="project">
+                                            <option>Launch Vehicle Design</option>
+                                            <option>Propulsion Systems</option>
+                                            <option>Spacecraft Engineering</option>
+                                            <option>Mission Analysis</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="message">Project Details</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Launch Project
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Headquarters</h5>
+                        <p>Cape Canaveral, FL<br>United States</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Phone</h5>
+                        <p>+1 (555) 123-SPACE<br>+1 (555) 123-7722</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>info@space.step<br>engineering@space.step</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <a href="#home">
+                            <i class="fas fa-rocket me-2"></i>
+                            <span class="brand-text">space.step</span>
+                        </a>
+                        <p class="mt-3">Engineering the future of space exploration through innovative rocket technology and cutting-edge spacecraft design.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Launch Vehicles</a></li>
+                        <li><a href="#">Propulsion</a></li>
+                        <li><a href="#">Spacecraft</a></li>
+                        <li><a href="#">Mission Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Technical Papers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        &copy; 2025 space.step. All rights reserved. | Pioneering the future of space exploration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
